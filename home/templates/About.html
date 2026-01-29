@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Netflix Tudum - Our Story">
+    <title>About - Netflix Tudum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="{% url 'home' %}">
+                <i class="fas fa-play-circle" style="color: #e50914;"></i> Netflix Tudum
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'about' %}">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'register' %}">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <div class="bg-dark text-white py-5" style="background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">About Netflix Tudum</h1>
+            <p class="lead">Discover the story behind the world's leading entertainment platform</p>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="container-fluid bg-dark text-white">
+        <section class="content-section">
+            <div class="container">
+                <!-- Our Story -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6 mb-4">
+                        <h2 class="section-heading">Our Story</h2>
+                        <p class="text-light">
+                            Netflix Tudum was founded with a simple vision: to entertain the world. We started as a small streaming service and have grown into a global entertainment powerhouse with millions of subscribers across the globe.
+                        </p>
+                        <p class="text-light">
+                            Today, we produce and distribute some of the most acclaimed and beloved shows and films, bringing joy and inspiration to audiences everywhere.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=500&auto=format&fit=crop&q=80" class="img-fluid rounded" alt="Our Story">
+                    </div>
+                </div>
+
+                <!-- Our Mission -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6 order-lg-2 mb-4">
+                        <h2 class="section-heading">Our Mission</h2>
+                        <p class="text-light">
+                            We are committed to creating original, compelling stories from the greatest storytellers. Our mission is to entertain the world with quality content that resonates with diverse audiences.
+                        </p>
+                        <ul class="list-unstyled text-light">
+                            <li><i class="fas fa-check text-danger me-2"></i>World-class entertainment for all</li>
+                            <li><i class="fas fa-check text-danger me-2"></i>Supporting local storytellers</li>
+                            <li><i class="fas fa-check text-danger me-2"></i>Innovative technology and streaming</li>
+                            <li><i class="fas fa-check text-danger me-2"></i>Inclusive and diverse content</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=500&auto=format&fit=crop&q=80" class="img-fluid rounded" alt="Our Mission">
+                    </div>
+                </div>
+
+                <!-- Why Choose Us -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="section-heading text-center mb-5">Why Choose Netflix Tudum?</h2>
+                    </div>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-secondary text-white border-0 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-film text-danger mb-3" style="font-size: 2.5rem;"></i>
+                                <h5 class="card-title">Vast Library</h5>
+                                <p class="card-text">Thousands of shows, movies, and documentaries</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-secondary text-white border-0 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-danger mb-3" style="font-size: 2.5rem;"></i>
+                                <h5 class="card-title">Multi-Device</h5>
+                                <p class="card-text">Watch on TV, tablet, or phone</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-secondary text-white border-0 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-download text-danger mb-3" style="font-size: 2.5rem;"></i>
+                                <h5 class="card-title">Download & Go</h5>
+                                <p class="card-text">Watch offline anytime, anywhere</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-secondary text-white border-0 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-users text-danger mb-3" style="font-size: 2.5rem;"></i>
+                                <h5 class="card-title">Family Profiles</h5>
+                                <p class="card-text">Personalized experience for everyone</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="row bg-secondary p-5 rounded mb-5">
+                    <div class="col-md-3 text-center mb-4">
+                        <h3 class="display-5 fw-bold text-danger">250M+</h3>
+                        <p>Subscribers Worldwide</p>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <h3 class="display-5 fw-bold text-danger">190+</h3>
+                        <p>Countries</p>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <h3 class="display-5 fw-bold text-danger">5000+</h3>
+                        <p>Content Titles</p>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <h3 class="display-5 fw-bold text-danger">50+</h3>
+                        <p>Awards Won</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5 border-top border-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5><i class="fas fa-play-circle"></i> Netflix Tudum</h5>
+                    <p class="text-muted">Premium entertainment at your fingertips</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="{% url 'home' %}" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="{% url 'about' %}" class="text-muted text-decoration-none">About</a></li>
+                        <li><a href="{% url 'contact' %}" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6>Follow Us</h6>
+                    <div>
+                        <a href="#" class="text-danger me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-danger me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-danger me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-danger"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center text-muted">
+                <p>&copy; 2026 Netflix Tudum. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
